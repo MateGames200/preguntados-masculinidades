@@ -58,35 +58,17 @@ const PREGUNTAS = [
   { cat: "estereotipos",
     texto: "¿Cuál de estas cosas puede hacer un hombre sin que eso lo haga menos hombre?",
     opciones: ["Cocinar.", "Bailar.", "Llorar.", "Todas las anteriores."] },
-  { cat: "estereotipos",
-    texto: "Un chico quiere usar una prenda de ropa que está socialmente asociada con las mujeres. ¿Qué opinás?",
-    opciones: ["Debería usar lo que le guste.", "Depende de dónde vaya.", "Probablemente reciba burlas, pero eso no significa que esté mal.", "No me parece algo importante."] },
-  { cat: "estereotipos",
-    texto: "¿De dónde creen que vienen muchas de las ideas sobre cómo debería comportarse un hombre?",
-    opciones: ["De la familia.", "De los amigos.", "De las redes sociales, películas y televisión.", "De una combinación de todas."] },
-  { cat: "estereotipos",
-    texto: "¿Cuál de estas frases escuchaste más veces?",
-    opciones: ["«Los hombres no lloran».", "«Tenés que hacerte respetar».", "«Eso es cosa de mujeres».", "«Tenés que ser fuerte»."] },
-
-  // ---------- SITUACIONES COTIDIANAS ----------
-  { cat: "cotidianas",
-    texto: "Un amigo pierde un partido y empieza a enojarse muchísimo. ¿Qué pensás?",
-    opciones: ["Es normal frustrarse cuando perdés.", "No debería tomárselo tan en serio.", "Tiene que aprender a perder.", "Depende de cómo reaccione."] },
-  { cat: "cotidianas",
-    texto: "Si un chico quiere aprender a bailar, pero le da vergüenza porque sus amigos podrían burlarse, ¿qué le dirías?",
-    opciones: ["Que haga lo que le gusta.", "Que primero aprenda y después les muestre.", "Que no les dé importancia a sus amigos.", "Que no tiene por qué hacer algo que lo incomode."] },
-  { cat: "cotidianas",
-    texto: "En una película, el protagonista siempre es el más fuerte, nunca tiene miedo y siempre resuelve todo solo. ¿Te parece una representación realista?",
-    opciones: ["Sí, porque tiene que ser un héroe.", "No, nadie puede resolver todo solo.", "Depende del tipo de película.", "Nunca lo había pensado."] },
 
   // ---------- PARA PENSAR ----------
   { cat: "pensar",
     texto: "¿Creés que a veces las personas hacen cosas solamente para encajar con sus amigos?",
     opciones: ["Sí, bastante.", "Algunas veces.", "No necesariamente.", "Nunca lo había pensado."] },
   { cat: "pensar",
-    texto: "¿Qué te parece más importante en una amistad?",
-    opciones: ["Poder confiar en la otra persona.", "Divertirse juntos.", "Poder hablar de cualquier cosa.", "Respetarse incluso cuando piensan diferente."] },
-  { cat: "pensar",
     texto: "Si pudieras eliminar una expectativa que la sociedad tiene sobre los hombres, ¿cuál sería?",
-    opciones: ["Que siempre tienen que ser fuertes.", "Que no pueden mostrar tristeza.", "Que tienen que demostrar constantemente su valentía.", "Que no pueden hacer determinadas cosas porque son «de mujeres»."] }
+    opciones: ["Que siempre tienen que ser fuertes.", "Que no pueden mostrar tristeza.", "Que tienen que demostrar constantemente su valentía.", "Que no pueden hacer determinadas cosas porque son «de mujeres»."] },
+
+  // ---------- SITUACIONES COTIDIANAS ----------
+  { cat: "cotidianas",
+    texto: "Un amigo pierde un partido y empieza a enojarse muchísimo. ¿Qué pensás?",
+    opciones: ["Es normal frustrarse cuando perdés.", "No debería tomárselo tan en serio.", "Tiene que aprender a perder.", "Depende de cómo reaccione."] }
 ];
