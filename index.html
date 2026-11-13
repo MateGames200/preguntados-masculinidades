@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preguntados: ¿Y qué tiene? – Fuera del molde</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<!-- ============ INICIO ============ -->
+<section id="inicio" class="pantalla activa">
+  <div class="burbujas" aria-hidden="true">
+    <span style="--x:8%;--d:0s">💗</span><span style="--x:24%;--d:1.2s">🤝</span>
+    <span style="--x:44%;--d:.5s">🧩</span><span style="--x:63%;--d:1.8s">🏠</span>
+    <span style="--x:80%;--d:.9s">💭</span><span style="--x:92%;--d:2.4s">⭐</span>
+  </div>
+  <div class="inicio-centro">
+    <div class="sello">PREGUNTADOS</div>
+    <h1>¿Y qué <span>tiene?</span></h1>
+    <p class="subtitulo">Un juego para pensar, opinar y salir del molde</p>
+    <div class="grupo">Fuera del molde</div>
+    <button id="btnComenzar" class="btn-grande">COMENZAR</button>
+    <p class="ayuda">Atajos: A B C D elegir · ← → navegar · Espacio temporizador · R reiniciar pregunta</p>
+  </div>
+</section>
+
+<!-- ============ JUEGO ============ -->
+<section id="juego" class="pantalla">
+  <header class="barra-sup">
+    <div class="categoria"><span id="catIcono">💗</span><span id="catNombre">Emociones</span></div>
+    <div class="progreso">
+      <div id="progTexto">Pregunta 1 de 16</div>
+      <div class="progreso-barra"><div id="progRelleno"></div></div>
+    </div>
+    <div class="reloj" id="reloj" style="--p:1">
+      <div class="reloj-num" id="relojNum">30</div>
+    </div>
+  </header>
+
+  <main class="centro">
+    <div id="tarjeta" class="tarjeta"><h2 id="pregunta"></h2></div>
+    <div id="opciones" class="opciones"></div>
+    <div id="reflexion" class="reflexion"><span>💬</span><b id="reflexionTexto"></b></div>
+  </main>
+
+  <footer class="controles">
+    <div class="grupo-ctrl">
+      <button id="btnAnterior">◀ Anterior</button>
+      <button id="btnReiniciarPreg">↺ Reiniciar pregunta</button>
+      <button id="btnSaltar">Saltar ⤼</button>
+      <button id="btnSiguiente" class="primario">Siguiente ▶</button>
+    </div>
+    <div class="grupo-ctrl tiempo">
+      <button id="btnTimer" class="primario">▶ Iniciar</button>
+      <button id="btnTimerReset">⟲ Reiniciar</button>
+      <div class="duraciones" id="duraciones"></div>
+    </div>
+    <div class="grupo-ctrl">
+      <button id="btnReiniciarPartida">Reiniciar partida</button>
+      <button id="btnInicio">⌂ Inicio</button>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ FINAL ============ -->
+<section id="final" class="pantalla">
+  <div id="confeti" aria-hidden="true"></div>
+  <div class="final-centro">
+    <h1 class="final-titulo">No hay una sola forma de ser hombre</h1>
+    <p class="final-texto">Ser fuerte también puede ser pedir ayuda, reconocer un error, escuchar y expresar lo que sentimos.</p>
+    <p class="final-gracias">Gracias por jugar. ¡Salí del molde!</p>
+    <div class="grupo">Fuera del molde</div>
+    <button id="btnJugarOtraVez" class="btn-grande">VOLVER A JUGAR</button>
+  </div>
+</section>
+
+<!-- ============ CONFIRMACIÓN ============ -->
+<div id="modal" class="modal">
+  <div class="modal-caja">
+    <p id="modalTexto"></p>
+    <div>
+      <button id="modalNo">Cancelar</button>
+      <button id="modalSi" class="primario">Sí, continuar</button>
+    </div>
+  </div>
+</div>
+
+<script src="preguntas.js"></script>
+<script src="juego.js"></script>
+</body>
+</html>
